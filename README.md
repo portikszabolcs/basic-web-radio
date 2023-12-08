@@ -2,7 +2,7 @@
 My first hobby project: online radio collection webapp written in HTML/CSS/JavaScript.
 
 ### Key features:
-* quick access for favorites
+* quick access to favorites
 * stations can be filtered by language
 * MediaSession support (shows metadata and media controls depending on browser and device)
 * currently playing song and album artwork
