@@ -1,0 +1,59 @@
+{
+  "name": "Rádió Projekt",
+  "short_name": "Rádió Projekt",
+  "description": "Online Rádió Gyűjtemény",
+  "categories": ["music","entertainment"],
+  "lang": "hu-HU",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "rgb(70, 70, 70)",
+  "icons": [
+    {
+      "src": "img/favicon-96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/windows-tile.png",
+      "sizes": "150x150",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/apple-touch.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/android-chrome.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "img/maskable-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "background_color": "rgb(70, 70, 70)",
+  "shortcuts": [
+    {
+      "name": "Legutóbb hallgatott",
+      "short_name": "Legutóbb hallgatott",
+      "description": "Legutóbb hallgatott rádió lejátszása",
+      "url": "/?s=last",
+      "icons": [{ "src": "img/last-played.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "1.Kedvenc",
+      "short_name": "#1 Kedvenc",
+      "description": "A kedvencek első elemének lejátszása",
+      "url": "/?s=fav",
+      "icons": [{ "src": "img/favorite.png", "sizes": "192x192" }]
+    }
+  ]
+}

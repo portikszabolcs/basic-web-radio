@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<title>Radio Proiect</title>
+	<meta charset="UTF-8">
+	<base href="../">
+	<link rel="stylesheet" href="style.css">
+	<script>
+	if (navigator.serviceWorker.controller) {
+    console.log("Active service worker found");
+    } else {
+        if(location.host == 'simpleradio.netlify.app') navigator.serviceWorker
+        .register("serviceWorker.js", {
+        scope: "./"
+        })
+        .then(function () {
+        console.log("Service worker registered");
+        });
+    }
+	</script>
+	<script type="text/javascript" src="ro/text.js" charset="UTF-8" defer></script>
+	<script type="text/javascript" src="app.min.js" charset="UTF-8" defer></script>
+	<script type="text/javascript" src="icy-metadata.js" charset="UTF-8" defer></script>
+	<link rel="manifest" id="manifest" href="ro/manifest.json">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Radio Proiect">
+	<meta name="apple-mobile-web-app-title" content="Radio Proiect">
+	<meta name="msapplication-TileColor" content="rgb(70, 70, 70)">
+	<meta name="msapplication-TileImage" content="img/windows-tile.png">
+
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96.png">
+	<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/apple-touch.png">
+	<link rel="shortcut icon" type="image/png" sizes="192x192" href="img/android-chrome.png">
+	<meta name="theme-color" content="rgb(70, 70, 70)">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Portik Szabolcs">
+	<meta name="description" content="Colecție de Radiouri Online într-o Aplicație" />
+	<meta name="keywords" content="radio projekt, radio, online radio, asculta, radio proiect" />
+	<link rel="canonical" href="https://simpleradio.netlify.app/" />
+
+	<meta property="og:description" content="Aplicație pentru Ascultarea Radiourilor Online" />
+	<meta property="og:title" content="Radio Proiect" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="https://simpleradio.netlify.app/img/logo-256x256.png" />
+	<meta property="og:url" content="https://simpleradio.netlify.app/ro/" />
+	<meta property="og:image:width" content="256"/>
+	<meta property="og:image:height" content="256"/>
+	<script src="https://www.gstatic.com/cv/js/sender/v1/cast_sender.js?loadCastFramework=1" defer></script>
+	<script defer src="https://www.googletagmanager.com/gtag/js?id=G-DD8W82L1MT"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-DD8W82L1MT');
+	</script>
+</head>
+<body>
+<div id="headerID" class="header">
+	<a href="/ro" id="my-radio">
+		<svg
+		viewBox="0 0 105.83333 105.83334"
+		version="1.1"
+		id="main-logo"
+		xmlns="http://www.w3.org/2000/svg"
+		xmlns:svg="http://www.w3.org/2000/svg"
+		xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+		xmlns:cc="http://creativecommons.org/ns#"
+		xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<title
+				id="title34948">Radio LOGO</title>
+		<defs
+				id="defs3148" />
+		<g
+				id="layer1">
+			<path
+					style="fill:#3cc80a;fill-opacity:1;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+					d="M 13.229167,29.104166 79.374999,2.6458333"
+					id="path3977" />
+			<rect
+					style="fill:#5fd223;fill-opacity:1;stroke:none;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+					id="rect3558"
+					width="105.83334"
+					height="79.375"
+					x="-1.9382326e-06"
+					y="26.458332"
+					ry="10.583333" />
+			<ellipse
+					style="fill:#d72d1e;fill-opacity:1;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+					id="path11458"
+					cx="52.916664"
+					cy="66.145836"
+					rx="23.812498"
+					ry="23.812504" />
+			<path
+					style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+					d="m 52.916666,42.333333 v 15.875"
+					id="path23758" />
+			<path
+					style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.529417;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+					id="path1003"
+					d="m 52.916665,31.20624 5.053624,8.753137 -10.107251,-2e-6 z"
+					transform="matrix(1.5706547,0,0,0.85368106,-30.197141,9.3111299)" />
+		</g>
+		<metadata
+				id="metadata34946">
+			<rdf:RDF>
+				<cc:Work
+						rdf:about="">
+					<dc:title>Radio LOGO</dc:title>
+					<dc:date>2022.09.30.</dc:date>
+					<dc:creator>
+						<cc:Agent>
+							<dc:title>Portik Szabolcs</dc:title>
+						</cc:Agent>
+					</dc:creator>
+					<dc:subject>
+						<rdf:Bag>
+							<rdf:li>radio</rdf:li>
+						</rdf:Bag>
+					</dc:subject>
+				</cc:Work>
+			</rdf:RDF>
+		</metadata>
+	</svg>
+	RADIO
+	<br/>
+	PROIECT
+	</a>
+	<div>
+		<google-cast-launcher></google-cast-launcher>
+		<button id="settings-button" class="header-button focusable" title="Settings" onclick="settingSwitch()">
+			<span id="settings-icon" class="material-icons" style="font-size: 42px;"> settings </span>
+		</button>
+	</div>
+</div>
+
+<div id="contentID">
+	<div class="content">
+		<div id="playing" class="main-element">
+			<div id="player-header" class="section-header">
+				<h1 id="radio-title" class="section-title"> Selectați un radio </h1>
+				<div style="flex: 0 0 auto;">
+					<button class="player-header-button" id="openWebsite-button" title="Station website" onclick="openPage()">
+						<img class="player-header-image" src="img/website.png" alt="station website">
+					</button>
+					<button class="player-header-button focusable" id="addToFavorites-button" title="Add to/Remove from favorites" onclick="favoriteSwitch()">
+						<img class="player-header-image" id="star-icon" src="img/star.png" alt="favorite icon">
+					</button>
+				</div>
+			</div>
+
+			<div id="big-logo-container">
+				<img id="big-logo" src="img/maskable-grey.svg" alt="Station logo / Album artwork">
+			</div>
+			<details  id="now-playing" style="visibility: hidden;">
+				<summary>
+					<p id="now-label"> Se aude:&nbsp; </p>
+					<a id="song-link" href="#" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color:inherit">
+						<span id="song-info" style="font-weight: normal;"></span>
+					</a>
+				</summary>
+				<div id="playlist-container"></div>
+			</details>
+			<radio-player>
+				<button class="material-icons non-controls focusable" onclick="shareAPI()" title="Partajare"> share </button>
+				<button id="retry" class="material-icons non-controls focusable" onclick="retryPlaying(true)" title="Reîncărcare"> refresh </button>
+				<button id="previous" class="material-icons controls focusable" onclick="prevStation()" title="Radioul anterior"> skip_previous </button>
+				<button id="play-pause" class="material-icons controls focusable" onclick="playPause()" title="Redare/pauză"> play_arrow </button>
+				<button id="next" class="material-icons controls focusable" onclick="nextStation()" title="Radioul următor"> skip_next </button>
+				<button id="mute" class="material-icons non-controls focusable" onclick="mute()" title="Dezactivare sunet"> volume_up </button>
+				<button class="material-icons non-controls focusable" onclick="aod()" title="Screensaver (AOD)"> aod </button>
+				<audio id="audio" src="">Player</audio>
+			</radio-player>
+		</div>
+
+		<div id="quick-access" class="main-element">
+			<div id="favorites">
+				<h1 class="section-title"> Favorite </h1>
+				<div id="favorites-container">
+					<p class="help-text fallback-text" id="no-favs"> Faceți click pe steluță după selectarea radioului pentru adăugare la favorite. </p>
+				</div>
+			</div>
+		</div>
+
+		<div id="radio-list" class="main-element">
+			<div class="section-header">
+				<h1 class="section-title"> Radiouri </h1>
+				<div id="filter-window">
+					<button id="filter-button" class="material-icons md-36" onclick="filterSwitch()">filter_list</button>
+					<div id="filter-list">
+						<button class="filter-buttons" data-val="all" onclick="filter(this)"> Toate </button>
+						<button class="filter-buttons" data-val="hu" onclick="filter(this)"> HU </button>
+						<button class="filter-buttons" data-val="ro" onclick="filter(this)"> RO </button>
+						<button class="filter-buttons" data-val="en" onclick="filter(this)"> EN </button>
+					</div>
+				</div>
+			</div>
+			<div id="radio-list-container" class="container"></div>
+		</div>
+
+		<div id="settings" style="transform: translateX(100%)" data-state="off">
+			<div class="settings-entry" style="border-width: unset; padding: 14px; margin: 0;">
+				<h1 class="section-title"> Setări
+				<button style="float: right; height: 48px;" onclick="settingSwitch()">
+					<span class="material-icons md-36" style="font-weight: bold;">
+						close
+					</span>
+				</button>
+				</h1>
+			</div>
+			<div class="settings-entry">
+				<label for="scheme-selector"> Aparență </label>
+				<select id="scheme-selector" class="focusable-setting" name="scheme-selector" onchange="schemeSwitch()">
+					<option value="light"> Luminos </option>
+					<option value="dark"> Întunecat </option>
+					<option value="auto" selected> Auto </option>
+				</select>
+				<br>
+				<p class="help-text"> Culorile paginii: întunecat, luminos sau utilizarea temei dispozitivului </p>
+			</div>
+			<div class="settings-entry">
+				<label for="color-selector"> Temă </label>
+				<select id="color-selector" class="focusable-setting" name="color-selector" onchange="themeSet(this.value)">
+					<option value="default"> Adaptivă </option>
+					<option value="red"> Roșu </option>
+					<option value="green"> Verde </option>
+					<option value="blue"> Albastru </option>
+					<option value="grey" selected> Gri </option>
+				</select>
+				<br>
+				<p class="help-text"> Modificarea culorilor </p>
+			</div>
+			<div class="settings-entry">
+				<label for="timer-input"> Temporizator oprire </label>
+				<input type="time" id="timer-input" class="focusable-setting" name="timer-input" style="display: inline-block;" value="00:00" onchange="timeInput()">
+				<br>
+				<p class="help-text"> Oprirea automată a radioului după ora programată </p>
+			</div>
+			<div class="settings-entry">
+				<label for="autoplay"> Reluarea ultimului radio </label>
+				<input class="checkbox focusable-setting" type="checkbox" id="autoplay" name="autoplay">
+				<br>
+				<p class="help-text"> Redarea ultimului radio ascultat după deschiderea aplicației/paginii </p>
+			</div>
+			<div class="settings-entry" style="display: none;">
+				<label for="wake-lock"> Prevenirea opririi ecranului </label>
+				<input class="checkbox focusable-setting" type="checkbox" id="wake-lock" name="wake-lock">
+				<br>
+				<p class="help-text"> Prevenirea opririi automate a ecranului în timpul redării </p>
+			</div>
+			<div class="settings-entry">
+				<label for="custom-station"> Radio nou </label>
+				<button id="custom-station" class="focusable-setting launch-icon" onclick="addStationMenu()">
+					<span class="material-icons"> launch </span>
+				</button>
+				<br>
+				<p class="help-text"> Adăugarea unui radio nou </p>
+			</div>
+			<div class="settings-entry">
+				<label for="metadata"> Date despre muzică </label>
+				<input class="checkbox focusable-setting" type="checkbox" id="metadata" name="metadata">
+				<br>
+				<p class="help-text"> Afișarea datelor despre muzica actuală dacă este disponibil </p>
+			</div>
+			<div class="settings-entry">
+				<a class="focusable-setting" href="https://docs.google.com/forms/d/e/1FAIpQLSed5_IUz_paWywaOuTRvPk_XzwsNywqyqhzlhY2ANmIAhgUWQ/viewform?usp=sf_link" style="color:inherit" target="_blank" rel="noopener noreferrer">
+					Feedback
+				</a>
+				<a href="/en/" class="lang-button focusable-setting" target="_self">
+					🇬🇧️
+				</a>
+				<a href="/" class="lang-button focusable-setting" target="_self">
+					🇭🇺️
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+<button id="scroll-up" style="display: none;" type="button" onclick="scrollUp()">
+	<span class="material-icons" style="vertical-align: middle;"> arrow_upward </span>
+</button>
+<div id="shadow-layer" class="shadow-layer" style="display: none; z-index: 3;" onclick="settingSwitch()"></div>
+
+</body>
+</html>
