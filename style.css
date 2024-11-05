@@ -4,16 +4,26 @@
 	font-style: normal;
 	font-weight: 400;
 	src: local('Material Icons Outlined'),
-	  local('MaterialIconsOutlined-Regular'),
-	  url('fonts/MaterialIconsOutlined-Regular.otf') format('opentype');
+		local('MaterialIconsOutlined-Regular'),
+		url('fonts/MaterialIconsOutlined-Regular.otf') format('opentype');
 }
-*	{
+
+* {
 	box-sizing: border-box;
 }
+
 @keyframes spin {
-	0% { transform: rotate(0deg); background-color: transparent;}
-	100% { transform: rotate(360deg); background-color: transparent;}
+	0% {
+		transform: rotate(0deg);
+		background-color: transparent;
+	}
+
+	100% {
+		transform: rotate(360deg);
+		background-color: transparent;
+	}
 }
+
 .material-icons {
 	font-family: 'Material Icons Outlined';
 	font-weight: inherit;
@@ -33,59 +43,81 @@
 	-moz-osx-font-smoothing: grayscale;
 	font-feature-settings: 'liga';
 }
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-30 { font-size: 30px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
-:root{
+
+.material-icons.md-18 {
+	font-size: 18px;
+}
+
+.material-icons.md-24 {
+	font-size: 24px;
+}
+
+.material-icons.md-30 {
+	font-size: 30px;
+}
+
+.material-icons.md-36 {
+	font-size: 36px;
+}
+
+.material-icons.md-48 {
+	font-size: 48px;
+}
+
+:root {
 	--bg-color: #fff;
 	--bg2-color: #e7e7e7;
 	--text-color: black;
 	--main-color: rgb(70, 70, 70);
 	--main-text: white;
-	--second-color: 100,100,100;
+	--second-color: 100, 100, 100;
 	--second-text: white;
 }
-.light-mode{
+
+.light-mode {
 	color-scheme: light !important;
 	--bg-color: #fff !important;
 	--bg2-color: #e7e7e7 !important;
 	--text-color: black !important;
 }
-.dark-mode{
+
+.dark-mode {
 	color-scheme: dark !important;
 	--bg-color: #111 !important;
 	--bg2-color: #000 !important;
 	--text-color: white !important;
 }
-.theme-default{
+
+.theme-default {
 	--main-color: var(--bg2-color);
 	--main-text: none;
-	--second-color: 127,127,127;
+	--second-color: 127, 127, 127;
 	--second-text: white;
 	--holiday: #4dcddc;
 }
-.theme-green{
+
+.theme-green {
 	--main-color: rgb(0, 70, 10);
 	--main-text: white;
 	--second-color: 110, 230, 150;
 	--second-text: black;
-	--holiday: rgb(110,230,150);
+	--holiday: rgb(110, 230, 150);
 }
-.theme-red{
+
+.theme-red {
 	--main-color: rgb(128, 0, 0);
 	--main-text: white;
 	--second-color: 255, 120, 120;
 	--second-text: black;
 	--holiday: rgb(255, 120, 120);
 }
-.theme-blue{
-	--main-color: rgb(0,50,115);
+
+.theme-blue {
+	--main-color: rgb(0, 50, 115);
 	--main-text: white;
 	--second-color: 135, 210, 250;
 	--second-text: black;
-	--holiday: rgb(135,210,250);
+	--holiday: rgb(135, 210, 250);
 }
 
 body {
@@ -98,26 +130,37 @@ body {
 	background-color: var(--bg-color);
 	color: var(--text-color);
 }
-h1, h2, h3, h4, h5, h6{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-.section-header{
+
+.section-header {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 }
-.section-title{
+
+.section-title {
 	overflow: hidden;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-align: left;
 	margin: 0;
 	font-weight: normal;
 	white-space: nowrap;
 	text-overflow: ellipsis;
 }
-img	{
+
+img {
 	vertical-align: middle;
 }
-button{
+
+button {
 	color: inherit;
 	background-color: transparent;
 	text-align: center;
@@ -125,14 +168,17 @@ button{
 	border-style: none;
 	padding: 0;
 }
-.checkbox{
+
+.checkbox {
 	accent-color: rgb(var(--second-color));
 	width: 20px;
 	height: 20px;
 	float: right;
 	margin: 10px;
 }
-select, input[type="time"]{
+
+select,
+input[type="time"] {
 	color: inherit;
 	font-size: 1.05rem;
 	vertical-align: middle;
@@ -144,31 +190,39 @@ select, input[type="time"]{
 	background-color: rgba(var(--second-color), 0.3);
 	border-color: rgb(var(--second-color));
 }
-input[type="text"]{
+
+input[type="text"] {
 	min-width: 200px;
 }
-form input, form label{
+
+form input,
+form label {
 	margin: 5px;
 }
-option{
+
+option {
 	background-color: var(--bg-color);
 }
-summary{
+
+summary {
 	margin-bottom: 10px;
 	cursor: pointer;
 	max-height: 50px;
 	overflow: hidden;
 }
-summary::marker{
+
+summary::marker {
 	font-size: 1.3rem;
 }
-summary:active{
+
+summary:active {
 	background: none;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
-	height:60px;
+	height: 60px;
 	width: 100%;
 	line-height: 18px;
 	position: sticky;
@@ -179,40 +233,46 @@ summary:active{
 	background-color: rgb(70, 70, 70);
 	background-color: var(--main-color);
 	box-shadow: 0 1px 3px #1116;
-	z-index:10;
+	z-index: 10;
 }
-#main-logo	{
+
+#main-logo {
 	height: 48px;
 	aspect-ratio: 1/1;
 	margin: 0 5px;
 	vertical-align: sub;
 }
-#my-radio{
+
+#my-radio {
 	padding: 8px;
 	color: inherit;
 	text-decoration: none;
 	align-items: flex-end;
 	display: inline-flex;
 }
-.header-button{
+
+.header-button {
 	color: inherit;
 	height: 60px;
 	border-style: none;
 }
-#settings-button{
+
+#settings-button {
 	padding: 5px;
 	width: 60px;
 }
-#settings-icon{
+
+#settings-icon {
 	max-height: 50px;
 	vertical-align: middle;
 	transition: all .4s ease;
 }
-google-cast-launcher{
+
+google-cast-launcher {
 	cursor: pointer;
-	--disconnected-color:inherit;
-	--connected-color:inherit;
-	--connected-color:rgb(var(--second-color));
+	--disconnected-color: inherit;
+	--connected-color: inherit;
+	--connected-color: rgb(var(--second-color));
 	width: 60px;
 	height: 60px;
 	position: absolute;
@@ -220,28 +280,34 @@ google-cast-launcher{
 	right: 60px;
 	padding: 13px;
 }
-.content{
+
+.content {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	align-items: flex-start;
 }
-.main-element{
+
+.main-element {
 	margin: 5px auto 20px auto;
 	width: 95%;
 }
-#playing{
+
+#playing {
 	text-align: center;
 	float: left;
 }
-.player-header-button{
+
+.player-header-button {
 	margin: 8px 2px;
 }
-.player-header-image{
-	height: 32px;
-	width: 32px;
+
+.player-header-image {
+	height: 30px;
+	width: 30px;
 }
-radio-player{
+
+radio-player {
 	display: flex;
 	width: 98%;
 	margin: 10px auto;
@@ -249,47 +315,57 @@ radio-player{
 	border-radius: 10px;
 	border: solid 1px lightgray;
 	border-color: #7772;
-	background-color: rgba(var(--second-color),0.2);
+	background-color: rgba(var(--second-color), 0.2);
 }
-radio-player button{
+
+radio-player button {
 	margin: 1px 3px;
 	border-radius: 9px;
 	height: 46px;
 	width: inherit;
 }
-radio-player .controls{
+
+radio-player .controls {
 	font-size: 36px;
 	height: 48px;
 	margin: 0;
 	border: solid 1px lightgray;
 	border-color: #8883;
-    background-color: rgba(var(--second-color),0.2);
+	background-color: rgba(var(--second-color), 0.2);
 }
-radio-player .non-controls{
+
+radio-player .non-controls {
 	font-size: 30px;
 }
+
 radio-player #previous {
 	border-radius: 10px 0 0 10px;
 }
+
 radio-player #play-pause {
 	border-radius: 0;
 	border-left: none;
 	border-right: none;
 }
+
 radio-player #next {
 	border-radius: 0 10px 10px 0;
 }
-radio-player .non-controls:active{
+
+radio-player .non-controls:active {
 	background-color: rgba(var(--second-color), 0.3);
 }
-radio-player .controls:active{
+
+radio-player .controls:active {
 	background-color: rgba(var(--second-color), 0.5) !important;
 }
-#favorites-container{
+
+#favorites-container {
 	display: flex;
 	flex-wrap: wrap;
 }
-.favorite-button{
+
+.favorite-button {
 	width: 21%;
 	height: 100%;
 	max-width: 110px;
@@ -298,17 +374,20 @@ radio-player .controls:active{
 	box-shadow: 0 1px 2px #555;
 	box-shadow: 0 1px 2px #555a;
 }
-.favorite-button img{
+
+.favorite-button img {
 	border-radius: inherit;
 	width: 100%;
 	aspect-ratio: 1/1;
 	object-fit: contain;
 }
-.fallback-text{
+
+.fallback-text {
 	padding: 0 5px;
 	opacity: .7;
 }
-#settings{
+
+#settings {
 	position: fixed;
 	color: black;
 	color: inherit;
@@ -324,8 +403,9 @@ radio-player .controls:active{
 	overflow-y: auto;
 	transition: transform .4s;
 }
-.settings-entry{
-	font-size: 1.4rem;
+
+.settings-entry {
+	font-size: 1.25rem;
 	border-bottom-style: solid;
 	border-color: grey;
 	border-color: #7777;
@@ -333,20 +413,25 @@ radio-player .controls:active{
 	padding: 15px 5px;
 	margin: 0 10px;
 }
-.lang-button{
+
+.lang-button {
 	text-decoration: none;
 	margin: 0 8px;
 	float: right;
 	opacity: .5;
 }
-.lang-button:active{
+
+.lang-button:active {
 	opacity: 1;
 }
-.help-text{
+
+.help-text {
 	font-size: small;
 	margin: 0;
+	margin-top: 4px;
 }
-#filter-window{
+
+#filter-window {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -354,16 +439,19 @@ radio-player .controls:active{
 	height: 40px;
 	min-width: 40px;
 }
-#filter-button{
+
+#filter-button {
 	padding: 5px;
 }
-.filter-buttons{
+
+.filter-buttons {
 	padding: 5px 10px;
 	font-size: large;
 	border-bottom: thin solid #7777;
 	background-color: #7772;
 }
-#filter-list{
+
+#filter-list {
 	border-radius: 3px;
 	z-index: 2;
 	position: relative;
@@ -373,7 +461,8 @@ radio-player .controls:active{
 	flex-direction: column;
 	box-shadow: 0 1px 3px #3337;
 }
-.list-button{
+
+.list-button {
 	border-radius: 3px;
 	border: thin solid lightgray;
 	border: thin solid #7772;
@@ -390,21 +479,26 @@ radio-player .controls:active{
 	background-color: #7772;
 	background-color: rgba(var(--second-color), 0.15);
 }
-#playlist-container .list-button{
+
+#playlist-container .list-button {
 	background-color: rgba(var(--second-color), 0.05);
 	border-radius: 10px;
 	cursor: initial;
 }
-#playlist-container .list-button img{
+
+#playlist-container .list-button img {
 	border-radius: 8px;
 }
-#playlist-container .list-button .textbox h2{
-	font-size: 1.3rem;
+
+#playlist-container .list-button .textbox h2 {
+	font-size: 1.1rem;
 }
-.list-button:active{
+
+.list-button:active {
 	background-color: rgba(var(--second-color), 0.4);
 }
-.list-button img{
+
+.list-button img {
 	border-radius: 2px;
 	width: 50px;
 	float: left;
@@ -412,31 +506,35 @@ radio-player .controls:active{
 	object-fit: contain;
 	box-shadow: 0 0 1px 0px black;
 }
-.list-button .textbox{
+
+.list-button .textbox {
 	overflow: hidden;
 	margin-left: 60px;
 	height: 50px;
 }
-.list-button .textbox h2{
+
+.list-button .textbox h2 {
 	margin: 3px 0;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	font-weight: normal;
 	line-height: 26px;
 }
-.textbox .slogan{
+
+.textbox .slogan {
 	white-space: pre;
 	opacity: .6;
 	vertical-align: middle;
 	font-size: .7rem;
 	margin: 3px 1px;
 }
-.popup-menu{
+
+.popup-menu {
 	z-index: 7;
 	position: fixed;
 	top: 50%;
 	left: 50%;
 	padding: 20px;
-	transform: translate(-50%,-50%);
+	transform: translate(-50%, -50%);
 	height: fit-content;
 	width: min-content;
 	box-shadow: 0 1px 8px 1px black;
@@ -444,7 +542,8 @@ radio-player .controls:active{
 	border: solid 1px rgb(var(--second-color));
 	background-color: var(--bg2-color);
 }
-#scroll-up{
+
+#scroll-up {
 	position: fixed;
 	height: 45px;
 	width: 45px;
@@ -459,28 +558,33 @@ radio-player .controls:active{
 	background-color: rgb(var(--second-color));
 	box-shadow: 0px 0px 5px #333;
 }
-#big-logo{
-	width: 200px;
-	height: 200px;
+
+#big-logo {
+	width: 250px;
+	height: 250px;
 	margin: auto;
 	display: inline-flex;
 	border: solid thin #8888;
 	box-shadow: 0 0 5px rgb(64, 64, 64);
 	box-shadow: 0 1px 15px rgb(64 64 64 / 25%);
 }
-#big-logo-container{
+
+#big-logo-container {
 	margin: 25px auto 5px auto;
 }
-#now-playing{
+
+#now-playing {
 	display: inline;
 	overflow: hidden;
 	width: 100%;
-	font-weight: bold; 
+	font-weight: bold;
 }
-#now-label{
+
+#now-label {
 	display: none;
 }
-#toast{
+
+#toast {
 	transition: opacity 1s;
 	max-width: 80%;
 	max-height: 20%;
@@ -501,12 +605,14 @@ radio-player .controls:active{
 	left: 50%;
 	transform: translate(-50%, -10%);
 }
+
 .launch-icon {
 	height: 40px;
 	width: 40px;
 	float: right;
 }
-#aod-bg{
+
+#aod-bg {
 	width: 100vw;
 	height: 100vh;
 	position: fixed;
@@ -518,7 +624,8 @@ radio-player .controls:active{
 	background-color: black;
 	z-index: 15;
 }
-#aod{
+
+#aod {
 	display: flex;
 	position: relative;
 	top: 20vh;
@@ -529,30 +636,36 @@ radio-player .controls:active{
 	user-select: none;
 	-webkit-user-select: none;
 }
-#aod #radio-title{
+
+#aod #radio-title {
 	white-space: normal;
 	text-align: inherit;
 	font-size: larger;
 	height: unset;
 	margin: 0;
 }
-#aod .clock{
+
+#aod .clock {
 	font-size: larger;
 	white-space: pre;
 	margin: 0;
 }
-#aod #song-info{
+
+#aod #song-info {
 	font-size: smaller;
 }
-#aod .controls{
+
+#aod .controls {
 	margin: 8px;
 }
-#aod #big-logo{
+
+#aod #big-logo {
 	margin: 5px auto;
 	width: 150px;
 	height: 150px;
 }
-.aod-x{
+
+.aod-x {
 	width: min-content;
 	vertical-align: middle;
 	margin: 3px;
@@ -562,7 +675,8 @@ radio-player .controls:active{
 	opacity: .8;
 	border: 1px solid #333;
 }
-.shadow-layer{
+
+.shadow-layer {
 	position: fixed;
 	top: 0;
 	height: 100%;
@@ -570,250 +684,316 @@ radio-player .controls:active{
 	background-color: #1118;
 	z-index: 6;
 }
+
 @media only screen and (prefers-color-scheme: dark) {
-	:root{
+	:root {
 		color-scheme: dark;
 		--bg-color: #111;
 		--bg2-color: black;
 		--text-color: white;
 	}
-	.theme-default{
-		--second-color: 100,100,100;
+
+	.theme-default {
+		--second-color: 100, 100, 100;
 		--second-text: white;
 	}
 }
+
 @media (hover: hover) {
-	button:hover{
+	button:hover {
 		cursor: pointer;
 	}
-	.header-button:hover{
+
+	.header-button:hover {
 		background-color: #fff3;
 	}
-	.player-header-button:hover{
+
+	.player-header-button:hover {
 		background-color: unset;
 		scale: 1.1;
 	}
-	radio-player .non-controls:hover{
+
+	radio-player .non-controls:hover {
 		background-color: rgba(var(--second-color), 0.3);
 	}
-	radio-player .controls:hover{
+
+	radio-player .controls:hover {
 		background-color: rgba(var(--second-color), 0.5);
 	}
-	.favorite-button:hover{
+
+	.favorite-button:hover {
 		box-shadow: 0px 1px 3px 1px #555;
 		box-shadow: 0px 1px 3px 1px #555a;
-    	translate: 0 -1%;
+		translate: 0 -1%;
 	}
-	.list-button:hover{
+
+	.list-button:hover {
 		background-color: #7775;
 		background-color: rgba(var(--second-color), 0.2);
 	}
-	#filter-button:hover{
+
+	#filter-button:hover {
 		scale: 1.1;
 	}
-	.filter-buttons:hover{
+
+	.filter-buttons:hover {
 		background-color: rgba(var(--second-color), 0.4);
 	}
-	.lang-button:hover{
+
+	.lang-button:hover {
 		opacity: 1;
 		cursor: pointer;
 	}
 }
+
 @media only screen and (min-width: 768px) {
-	.content{
+	.content {
 		transition: margin .1s;
 	}
-	.main-element{
+
+	.main-element {
 		width: 46%;
 		margin-top: 10px;
 	}
-	#radio-list{
+
+	#radio-list {
 		width: 96%;
 	}
-	#big-logo-container{
+
+	#big-logo-container {
 		margin: 40px auto 30px auto;
 	}
 
-	.favorite-button{
+	.favorite-button {
 		width: 27%;
 		margin: 3%;
 	}
-	.fallback-text{
+
+	.fallback-text {
 		padding: 10px;
 	}
-	.list-button{
+
+	.list-button {
 		width: 48%;
 	}
-	#main-logo{
+
+	#main-logo {
 		transition: margin ease 0.5s;
 		margin: 0 15px;
 	}
-	google-cast-launcher{
+
+	google-cast-launcher {
 		right: 100px;
 		width: 100px;
 	}
-	#settings{
+
+	#settings {
 		width: 50%;
 	}
+
 	#settings-button {
 		width: 100px;
 	}
-	#shadow-layer{
+
+	#shadow-layer {
 		backdrop-filter: blur(2px);
 	}
-	#aod #big-logo{
+
+	#aod #big-logo {
 		width: 200px;
 		height: 200px;
 		margin: 10px auto;
 	}
-	#aod #radio-title, #aod .clock{
+
+	#aod #radio-title,
+	#aod .clock {
 		font-size: 1.4rem;
 	}
-	#aod #song-info{
+
+	#aod #song-info {
 		font-size: medium;
 	}
-	#aod .controls{
+
+	#aod .controls {
 		font-size: 30px;
 	}
 }
+
 @media only screen and (min-width: 992px) {
-	.content{
+	.content {
 		max-width: 1300px;
 		margin: 0 auto;
 	}
-	.main-element{
+
+	.main-element {
 		transition: all .5s;
 		padding: 0 15px;
 		margin-bottom: 30px;
 	}
-	.section-title{
+
+	.section-title {
 		font-size: 2.1rem;
 	}
-	#playing{
+
+	#playing {
 		width: 67%;
 	}
-	#now-playing{
+
+	#now-playing {
 		font-size: 1.1rem;
 	}
-	#now-label{
+
+	#now-label {
 		display: inline;
 	}
-	radio-player .controls{
+
+	radio-player .controls {
 		height: 54px;
 		font-size: 42px !important;
 	}
-	radio-player .non-controls{
+
+	radio-player .non-controls {
 		margin: 1px 5px;
 		height: 52px;
 		font-size: 30px !important;
 	}
-	#quick-access{
+
+	#quick-access {
 		width: 33%;
 	}
-	#favorites-container{
+
+	#favorites-container {
 		padding: 0;
 	}
-	#settings{
+
+	#settings {
 		width: 35%;
 	}
-	#big-logo{
+
+	#big-logo {
 		width: 250px;
 		height: 250px;
 	}
-	#big-logo-container{
+
+	#big-logo-container {
 		margin: 20px auto;
 	}
-	#openWebsite-button{
+
+	#openWebsite-button {
 		display: inline !important;
 	}
-	#radio-list{
+
+	#radio-list {
 		width: 100%;
 	}
-	.list-button{
+
+	.list-button {
 		width: calc(94% / 3);
 		padding: 0;
 	}
-	#scroll-up{
+
+	#scroll-up {
 		bottom: 30px;
 		right: 50px;
 	}
-	#aod #big-logo{
+
+	#aod #big-logo {
 		width: 250px;
 		height: 250px;
 		margin: 25px auto;
 	}
-	#aod .clock{
+
+	#aod .clock {
 		font-size: xx-large;
 	}
-	#aod #radio-title{
+
+	#aod #radio-title {
 		font-size: xx-large;
 	}
-	#aod #song-info{
+
+	#aod #song-info {
 		font-size: x-large;
 	}
-	#aod .controls{
+
+	#aod .controls {
 		font-size: 36px;
 	}
 }
+
 @media only screen and (min-width: 1400px) {
-	#big-logo-container{
+	#big-logo-container {
 		margin: 35px auto;
 	}
-	.main-element{
+
+	.main-element {
 		margin: 10px 0 30px 0;
 	}
-	#settings{
+
+	#settings {
 		width: 37%;
 	}
-	#radio-list-container{
+
+	#radio-list-container {
 		margin: 10px 0;
 	}
-	#aod .clock{
+
+	#aod .clock {
 		font-size: xxx-large;
 	}
-	#aod #radio-title{
+
+	#aod #radio-title {
 		font-size: xxx-large;
 	}
-	#aod #song-info{
+
+	#aod #song-info {
 		font-size: xx-large;
 	}
-	#aod .controls{
+
+	#aod .controls {
 		font-size: 2.5rem;
 	}
 }
+
 @media only screen and (orientation: landscape) {
-	#aod{
+	#aod {
 		display: grid;
 		text-align: left;
-		grid-template-columns:auto max-content auto;
+		grid-template-columns: auto max-content auto;
 	}
-	#aod #big-logo{
+
+	#aod #big-logo {
 		margin: 0 20px 0 auto;
 		grid-column: 1;
 		grid-row-start: 1;
 		grid-row-end: 5;
 	}
-	#aod #song-info{
+
+	#aod #song-info {
 		grid-row: 3;
 		text-align: start;
 	}
-	#aod .clock{
+
+	#aod .clock {
 		grid-column: 2;
 	}
-	#aod .controls{
+
+	#aod .controls {
 		margin: 0 25px 0 -8px;
 	}
-	#aod-controls{
+
+	#aod-controls {
 		grid-column: 2;
 		grid-row: 4;
 	}
-	.aod-x{
+
+	.aod-x {
 		grid-row: 4;
 		grid-column: 3;
 		float: right;
 		opacity: .9;
 	}
 }
+
 @media only screen and (display-mode: standalone) {
 	#contentID {
 		overflow-y: scroll;
