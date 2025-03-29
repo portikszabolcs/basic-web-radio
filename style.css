@@ -251,21 +251,30 @@ summary:active {
 	display: inline-flex;
 }
 
-.header-button {
-	color: inherit;
-	height: 60px;
-	border-style: none;
+.header-actions {
+	display: flex;
+	align-items: center;
 }
 
-#settings-button {
-	padding: 5px;
+.header-button {
+	color: inherit;
 	width: 60px;
+	height: 60px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-style: none;
+	text-decoration: none;
+}
+
+.header-button span {
+	font-size: 36px;
 }
 
 #settings-icon {
 	max-height: 50px;
 	vertical-align: middle;
-	transition: all .4s ease;
+	transition: transform .4s ease;
 }
 
 google-cast-launcher {
@@ -275,9 +284,6 @@ google-cast-launcher {
 	--connected-color: rgb(var(--second-color));
 	width: 60px;
 	height: 60px;
-	position: absolute;
-	bottom: 0;
-	right: 60px;
 	padding: 13px;
 }
 
@@ -463,7 +469,7 @@ radio-player .controls:active {
 }
 
 .list-button {
-	border-radius: 3px;
+	border-radius: 4px;
 	border: thin solid lightgray;
 	border: thin solid #7772;
 	width: 98%;
@@ -471,7 +477,6 @@ radio-player .controls:active {
 	vertical-align: middle;
 	text-align: left;
 	font-size: 1.5rem;
-	padding: 1px;
 	margin: 4px 1%;
 	overflow: hidden;
 	white-space: nowrap;
@@ -499,12 +504,13 @@ radio-player .controls:active {
 }
 
 .list-button img {
-	border-radius: 2px;
+	border-radius: 3px;
 	width: 50px;
 	float: left;
 	aspect-ratio: 1/1;
 	object-fit: contain;
-	box-shadow: 0 0 1px 0px black;
+	outline: 1px solid lightgray;
+  outline: 1px solid #7772;
 }
 
 .list-button .textbox {
@@ -685,6 +691,16 @@ radio-player .controls:active {
 	z-index: 6;
 }
 
+.deprecation {
+	margin-top: -16px;
+	opacity: 0.7;
+	text-align: center;
+}
+
+.deprecation span {
+	vertical-align: bottom;
+}
+
 @media only screen and (prefers-color-scheme: dark) {
 	:root {
 		color-scheme: dark;
@@ -791,8 +807,12 @@ radio-player .controls:active {
 		width: 50%;
 	}
 
-	#settings-button {
+	.header-button {
 		width: 100px;
+	}
+
+	.header-button span {
+		font-size: 42px;
 	}
 
 	#shadow-layer {
@@ -889,7 +909,6 @@ radio-player .controls:active {
 
 	.list-button {
 		width: calc(94% / 3);
-		padding: 0;
 	}
 
 	#scroll-up {
