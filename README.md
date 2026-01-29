@@ -3,7 +3,7 @@ My first web project: an online radio collection webapp hosted on netlify.
 It was written in pure HTML, CSS and JavaScript, without any frameworks.
 
 Live preview:
-https://simpleradio.netlify.app
+https://simpleradio.netlify.app/en
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/0d80aa0c-addd-4321-b880-d01b8954dcca/deploy-status)](https://app.netlify.com/sites/simpleradio/deploys)
 
